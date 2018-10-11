@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Manager</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+</head>
+<body>
+    <nav class=" navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class=" navbar-brand" href="@Url.Action("Index","Home")">Employee Manager</a>
+        <div>
+            <ul class=" navbar-nav">
+                <li @Url class="nav-item active">
+                    <a class=" nav-link" href=" @Url.Action("Index", "Home")">Home</a>
+                </li>
+                <li @Url class="nav-item">
+                    <a class=" nav-link" href=" @Url.Action("Index", "Employee")">View All Employees</a>
+                </li>
+                <li @Url class="nav-item">
+                    <a class=" nav-link" href=" @Url.Action("Create", "Employee")">Create Employee</a>
+                </li>
+            </ul> 
+        </div>
+    </nav>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Md Ahmed</p>
+        </footer>
+    </div>
+
+    <script src="~/Scripts/jquery-3.0.0.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>
