@@ -36,7 +36,6 @@ namespace EmployeeManager.Controllers
                 HireDate = employee .HireDate ,
                 Department = employee .Department ,
                 JobTitle = employee .JobTitle ,
-                Salary = employee .Salary ,
                 EmployeeId = employee .EmployeeId ,
                 AvailableHours = employee .AvailableHours 
 
